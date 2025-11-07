@@ -16,6 +16,32 @@ body{
     margin-right: auto;
     scroll-behavior: auto;
 }
+/* Add to design.css */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0; top: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+}
+.close {
+  position: absolute;
+  top: 30px; right: 50px;
+  color: #fff;
+  font-size: 48px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10000;
+}
 /* filepath: c:\Users\pc\Desktop\Arwen\TR art portfolio\design.css */
 .parallax-bg {
     position: fixed;

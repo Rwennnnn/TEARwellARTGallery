@@ -44,4 +44,20 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById('bg5').style.transform = `translateY(${scrollY * 0.1}px)`;
         document.getElementById('bg8').style.transform = `translateY(${scrollY * 0.08}px)`;
     });
+
+        document.querySelectorAll('.artwork-item img').forEach(img => {
+      img.addEventListener('click', function() {
+        const modal = document.getElementById('image-modal');
+        const modalImg = document.getElementById('modal-img');
+        modal.style.display = 'flex';
+        modalImg.src = this.src;
+      });
+    });
+    document.querySelector('.close').onclick = function() {
+      document.getElementById('image-modal').style.display = 'none';
+    };
+    window.onclick = function(event) {
+      const modal = document.getElementById('image-modal');
+      if (event.target === modal) modal.style.display = 'none';
+    };
 });
