@@ -30,6 +30,18 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     };
-
     window.addEventListener("scroll", handleScrollAnimation);
+
+        // filepath: c:\Users\pc\Desktop\Arwen\TR art portfolio\javaport.js
+    window.addEventListener('scroll', function() {
+        const scrollY = window.scrollY;
+        document.getElementById('bg1').style.transform = `translateY(${scrollY * 0.1}px)`;
+        document.getElementById('bg6').style.transform = `translateY(${scrollY * 0.1}px)`;
+        document.getElementById('bg2').style.transform = `translateY(${scrollY * 0.01}px)`;
+        document.getElementById('bg7').style.transform = `translateY(${scrollY * 0.02}px)`;
+        document.getElementById('bg3').style.transform = `translateY(${scrollY * 0.02}px)`;
+        document.getElementById('bg4').style.transform = `translateY(${scrollY * 0.1}px)`;
+        document.getElementById('bg5').style.transform = `translateY(${scrollY * 0.1}px)`;
+        document.getElementById('bg8').style.transform = `translateY(${scrollY * 0.08}px)`;
+    });
 });
