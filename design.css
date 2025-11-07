@@ -171,7 +171,7 @@ hr{
     align-items: center;      /* Center content inside the item */
     justify-content: center;
     margin: 20px;
-    width: 300px;             /* Set a reasonable width */
+    width: 500px;             /* Set a reasonable width */
     background-color: rgba(255, 255, 255, 0.7); /* Add background color */
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.336);
