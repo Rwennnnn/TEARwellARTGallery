@@ -254,3 +254,31 @@ a{
     font-size: inherit;
     font-family: "averia Sans libre", "sans-serif";
 }
+@media (max-width: 600px) {
+  .artwork-grid {
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px;
+  }
+  .artwork-item {
+    width: 90vw;
+    height: auto;
+    margin: 10px auto;
+    padding: 10px;
+  }
+  .artwork-item img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  .label, .title, .name, .desc {
+    font-size: 16px;
+    margin: 10px;
+    text-align: center;
+  }
+  .button-container {
+    margin-left: 0;
+    margin-top: 10px;
+    justify-content: center;
+  }
+}
